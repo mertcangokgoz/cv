@@ -1,0 +1,259 @@
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  font-family: Ubuntu, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+a .mdi {
+  color: #2B7A0B;
+}
+
+a:hover {
+  color: #000;
+}
+
+h5 {
+  display: inline;
+  font-weight: 500;
+}
+
+div.page {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+div.page div.wrapper {
+  padding: 1rem;
+}
+
+div.clear {
+  clear: both;
+}
+
+div.main {
+  padding-right: 1rem;
+}
+
+div.header div.photo-col {
+  max-width: 150px;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+  div.header div.photo-col {
+    max-width: none;
+    text-align: center;
+  }
+}
+
+div.header img {
+  float: left;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  max-width: 125px;
+}
+
+@media only screen and (max-width: 769px) {
+  div.header img {
+    float: none;
+  }
+}
+
+div.header h1.title {
+  font-weight: 500;
+}
+
+div.header .subtitle {
+  color: #2B7A0B;
+}
+
+div.header .description {
+  margin-top: -1.25rem;
+}
+
+div.links {
+  background-color: #2B7A0B;
+  margin: 0;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+div.links li {
+  display: inline;
+}
+
+@media only screen and (max-width: 769px) {
+  div.links li {
+    display: block;
+    padding: 0.5rem;
+  }
+}
+
+div.links a {
+  color: #fff;
+  padding: 0.8rem;
+}
+
+div.links a .mdi {
+  color: #fff;
+  margin-right: 0.25rem;
+}
+
+div.cv-section {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+div.cv-section:first-child {
+  margin-top: 0.5rem;
+}
+
+div.cv-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B7A0B;
+  text-transform: uppercase;
+}
+
+div.cv-section div.work-experience {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.cv-section div.work-experience h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+div.cv-section div.work-experience h4 {
+  font-size: 1.1rem;
+}
+
+div.cv-section div.work-experience div.sub {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+div.cv-section div.work-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.cv-section div.work-experience ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+div.cv-section div.work-experience ul li:before {
+  left: 0;
+  top: 2px;
+  color: #2B7A0B;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  content: "\e5cc" !important;
+  /* https: //github.com/google/material-design-icons/blob/master/font/MaterialIcons-Regular.codepoints */
+  font-size: 0.8rem;
+}
+
+div.cv-section ul.skills {
+  margin-top: 0.5rem;
+}
+
+div.cv-section ul.skills li {
+  display: inline;
+  background-color: #2B7A0B;
+  color: #fff;
+  padding: 0.25rem 0.70rem;
+  border-radius: 5px;
+  line-height: 2rem;
+}
+
+div.cv-section ul.skills-alt li {
+  background-color: #fff;
+  color: inherit;
+  border: 1px solid #ccc;
+}
+
+div.color {
+  color: #2B7A0B;
+}
+
+div.grey {
+  color: #999;
+}
+
+div.download-wrapper {
+  text-align: center;
+}
+
+div.download-wrapper a.download-link {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+div.download-wrapper a.download-link span.mdi {
+  color: #000;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 1230px) {
+  div.download-wrapper a.download-link {
+    position: initial;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .section {
+    padding: 0;
+  }
+
+  div.container {
+    width: 100%;
+    max-width: none;
+  }
+
+  div.page {
+    box-shadow: none;
+  }
+
+  div.download-wrapper {
+    display: none;
+  }
+}
+
+@media print {
+  .section {
+    padding: 0;
+  }
+
+  div.container {
+    width: 100%;
+    max-width: none;
+  }
+
+  div.page {
+    box-shadow: none;
+  }
+
+  div.download-wrapper {
+    display: none;
+  }
+}
