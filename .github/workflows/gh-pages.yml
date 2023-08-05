@@ -8,15 +8,10 @@ on:
   pull_request:
   
 jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-
   # Deploy job
   deploy:
-    # Add a dependency to the build job
-    needs: build
-
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages
@@ -26,9 +21,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
+      
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
