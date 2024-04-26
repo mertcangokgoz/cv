@@ -244,6 +244,25 @@ div.download-wrapper a.download-link span.mdi {
 }
 
 @media print {
+
+  @page {
+    size: A4;
+  }
+
+  html,
+  body {
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+  }
+
+  div.photo-col {
+    display: none;
+  }
+
+  div.links {
+    display: none;
+  }
+
   .section {
     padding: 0;
   }
@@ -257,9 +276,34 @@ div.download-wrapper a.download-link span.mdi {
     box-shadow: none;
   }
 
-  div.download-wrapper {
+  .darkmode-layer {
     display: none;
   }
+
+  .darkmode-toggle {
+    display: none;
+  }
+
+  .darkmode-layer--button {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .darkmode--activated,
+  .darkmode-toggle {
+    display: none;
+  }
+
+  .darkmode-toggle .darkmode-toggle--white {
+    display: none;
+  }
+}
+
+.darkmode-toggle {
+  z-index: 999;
 }
 
 .darkmode--activated div.photo-col {
@@ -275,4 +319,9 @@ div.download-wrapper a.download-link span.mdi {
 .darkmode--activated a,
 .darkmode--activated li {
   color: #fff;
+}
+
+.darkmode--activated div.page {
+  box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+  border-radius: 5px;
 }
